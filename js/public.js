@@ -72,8 +72,10 @@ $(document).ready(function ($) {
     var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollY >= 60) {
       $(".helmet").addClass("helmet_pull_down");
+      $(".menu_phone").show();
     } else {
       $(".helmet").removeClass("helmet_pull_down");
+      $(".menu_phone").hide();
     }
   });
 });

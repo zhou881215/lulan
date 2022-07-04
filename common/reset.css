@@ -265,6 +265,16 @@ a:focus {
   display: flex;
 }
 
+.box_vertical {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
 /* flex换行 */
 
 .flex_wrap {

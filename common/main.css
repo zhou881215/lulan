@@ -125,31 +125,35 @@
   background-color: #3A58A3;
 }
 
+.menu_phone {
+  display: none;
+  margin-right: 30px;
+}
+
+/* 滑动后样式 */
 .helmet_pull_down {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 120px;
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.helmet_pull_down .helmet_logo {
-  width: 130px;
-}
-
-.helmet_pull_down .helmet_menu>ul>li {
-  line-height: 60px;
-}
-
-.helmet_pull_down .helmet_menu>ul>li .pop {
-  top: 45px;
 }
 
 /* banner */
 .banner_wrapper {
   position: relative;
   width: 100%;
+}
+
+.banner_wrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.8));
+  z-index: 2;
 }
 
 .swiper-container img {
@@ -224,7 +228,6 @@
 .index_title {
   width: 100%;
   margin: 80px 0 50px;
-  flex-direction: column;
 }
 
 .index_title_cn {
@@ -283,7 +286,7 @@
   left: 14px;
 }
 
-/* lab */
+/* lab_category */
 .lab_category {
   margin-bottom: 72px;
 }
@@ -322,13 +325,16 @@
 
 .lab_category_item .lci_left .lci_main {
   position: relative;
-  flex-direction: column;
   height: 100%;
   color: #ffffff;
 }
 
 .lab_category_item .lci_left .lci_main .iconfont {
   margin-bottom: 10px;
+  font-size: 48px;
+}
+
+.lab_category_item:last-of-type .lci_left .lci_main .iconfont {
   font-size: 40px;
 }
 
@@ -360,8 +366,180 @@
 
 .lab_category_item .lci_right .iconfont {
   position: relative;
+  font-size: 20px;
 }
 
 .lab_category_item:hover .lci_right .iconfont {
+  color: #FFFFFF;
+}
+
+/* lab_list */
+.lab_list {
+  width: 100%;
+}
+
+.lab_list_item {
+  display: block;
+  width: 22.3%;
+  margin-bottom: 50px;
+}
+
+.lab_list_item .lli_img {
+  overflow: hidden;
+}
+
+.lab_list_item .lli_img img {
+  transition: transform 0.2s linear;
+}
+
+.lab_list_item:hover .lli_img img {
+  transform: scale(1.1);
+}
+
+.lab_list_item .lli_bottom {
+  padding: 0 30px 0 20px;
+  height: 76px;
+  border-bottom: 1px solid #E3E3E3;
+  transition: background-color 0.2s linear, border-width 0.2s linear;
+}
+
+.lab_list_item .lli_bottom span {
+  font-size: 16px;
+  transition: color 0.2s linear;
+}
+
+.lab_list_item .lli_bottom i {
+  font-size: 20px;
+  color: #CDCDCD;
+  transition: transform 0.2s linear, color 0.2s linear;
+}
+
+.lab_list_item:hover .lli_bottom {
+  border-bottom: 3px solid #282D30;
+  background-color: #006EBD;
+}
+
+.lab_list_item:hover .lli_bottom span {
+  color: #fff;
+}
+
+.lab_list_item:hover .lli_bottom i {
+  color: #fff;
+  transform: rotateZ(-45deg);
+}
+
+/* index_more */
+.index_more {
+  display: block;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  color: #FFFFFF;
+  background-color: #197EC7;
+  transition: width 0.2s linear;
+}
+
+.index_more:hover {
+  color: #fff;
+  width: 200px;
+}
+
+/* lab_more */
+.lab_more {
+  margin: 0 auto 65px;
+  width: 150px;
+  transition: width 0.2s linear;
+}
+
+.lab_more:hover {
+  width: 200px;
+}
+
+/* company_wrapper */
+.company_wrapper {
+  width: 100%;
+  height: 1014px;
+  background-image: url('../images/aboutbg.jpg');
+  background-attachment: fixed;
+}
+
+.company_top {
+  margin-bottom: 120px;
+}
+
+.company_top_left {
+  width: 280px;
+  padding: 180px 0 0 0;
+}
+
+.company_top_left .company_title_en {
+  font-size: 24px;
+  font-weight: bold;
+  color: #C6C6C6;
+}
+
+.company_top_left .company_title_cn {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.company_top_right {
+  flex: 1;
+  padding: 120px 0 0 0;
+}
+
+.company_top_right .ctr_text {
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+.company_bottom {}
+
+.company_bottom_item {
+  width: 19.7%;
+  height: calc(100vw / 6);
+  text-align: center;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.company_bottom_item i {
+  font-size: 60px;
+  color: #197EC7;
+  transition: color 0.2s linear;
+}
+
+.company_bottom_item:first-of-type i {
+  font-size: 80px;
+}
+
+.company_bottom_item p {
+  margin: 15px 0 10px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  transition: color 0.2s linear;
+}
+
+.company_bottom_item span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #A3A4A5;
+  transition: color 0.2s linear;
+}
+
+.company_bottom_item:hover {
+  background-color: #197EC7;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.company_bottom_item:hover i,
+.company_bottom_item:hover p,
+.company_bottom_item:hover span {
   color: #FFFFFF;
 }
