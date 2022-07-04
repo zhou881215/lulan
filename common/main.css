@@ -282,3 +282,86 @@
 .index_title_en i:last-of-type::before {
   left: 14px;
 }
+
+/* lab */
+.lab_category {
+  margin-bottom: 72px;
+}
+
+.lab_category_item {
+  flex: 1;
+  height: 132px;
+  margin-right: 3.3%;
+  cursor: pointer;
+}
+
+.lab_category_item:last-of-type {
+  margin-right: 0;
+}
+
+.lab_category_item .lci_left {
+  position: relative;
+  width: 75%;
+  background-color: #197EC7;
+}
+
+.lab_category_item .lci_left::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #01A54F;
+  transition: width 0.1s linear;
+}
+
+.lab_category_item:hover .lci_left::before {
+  width: 100%;
+}
+
+.lab_category_item .lci_left .lci_main {
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  color: #ffffff;
+}
+
+.lab_category_item .lci_left .lci_main .iconfont {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.lab_category_item .lci_left .lci_main .lci_text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lab_category_item .lci_right {
+  position: relative;
+  flex: 1;
+  background-color: #E4E7E9;
+}
+
+.lab_category_item .lci_right::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #55595C;
+  transition: width 0.1s linear;
+}
+
+.lab_category_item:hover .lci_right::before {
+  width: 100%;
+}
+
+.lab_category_item .lci_right .iconfont {
+  position: relative;
+}
+
+.lab_category_item:hover .lci_right .iconfont {
+  color: #FFFFFF;
+}
