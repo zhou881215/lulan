@@ -1,0 +1,12 @@
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main_middle {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .isuw_main .isuw_pic {
+    width: 74vw;
+    margin: 0 auto;
+  }
+}

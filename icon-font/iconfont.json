@@ -1,0 +1,128 @@
+{
+  "id": "3493377",
+  "name": "安语",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201577",
+      "name": "3.1电话",
+      "font_class": "31dianhua",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "714886",
+      "name": "厂房标准合同",
+      "font_class": "changfangbiaozhunhetong",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "1130589",
+      "name": "酒店",
+      "font_class": "jiudian",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "1263385",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "1305480",
+      "name": "数据导出-01",
+      "font_class": "shujudaochu-01",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "1314974",
+      "name": "电",
+      "font_class": "dian",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "2076230",
+      "name": "厨房",
+      "font_class": "chufang",
+      "unicode": "e884",
+      "unicode_decimal": 59524
+    },
+    {
+      "icon_id": "8370229",
+      "name": "01-04-08-13- 花洒 icon",
+      "font_class": "----huasaicon",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "11372650",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e8ad",
+      "unicode_decimal": 59565
+    },
+    {
+      "icon_id": "11372702",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e8b9",
+      "unicode_decimal": 59577
+    },
+    {
+      "icon_id": "13638739",
+      "name": "气体",
+      "font_class": "qiti",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "15509779",
+      "name": "研发_代码",
+      "font_class": "yanfa_daima",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "15644321",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "15752792",
+      "name": "帆船-轮船",
+      "font_class": "fanchuan-lunchuan",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "18164960",
+      "name": "报警,警报,报警灯,危险",
+      "font_class": "alarm",
+      "unicode": "e871",
+      "unicode_decimal": 59505
+    },
+    {
+      "icon_id": "18998998",
+      "name": "icon-细水雾",
+      "font_class": "icon-xishuiwu",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "22580442",
+      "name": "主要港口",
+      "font_class": "zhuyaogangkou",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

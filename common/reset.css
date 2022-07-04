@@ -1,0 +1,292 @@
+/**
+ * Ming Ye, Zhou's Reset CSS v2.0 
+ * Determine on 2019.6.22 23:00
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  word-wrap: break-word;
+  /* 允许长单词换行到下一行 */
+  word-break: break-all;
+  /* 允许在单词内换行 */
+}
+
+/* custom */
+
+* {
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  /* transition: all 0.2s linear; */
+  /* 旋转元素,背面不可见 */
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 14px;
+  /* line-height: 2.2em; */
+  color: #555555;
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  /* chrome可以设置比12px更小的字体 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* ios定义默认点击背景色 -> 仅限移动端 */
+}
+
+button,
+input,
+textarea,
+select {
+  padding: 0;
+  outline: none;
+  -webkit-appearance: none;
+  word-wrap: break-word;
+  /* 允许长单词换行到下一行 */
+  word-break: break-all;
+  /* 允许在单词内换行 */
+  vertical-align: middle;
+  font-size: 100%;
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+}
+
+textarea {
+  resize: none;
+  /* 去除缩放按钮 */
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  /* transition: all 0.2s linear; */
+}
+
+a {
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #1C499E;
+  text-decoration: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #a5a5a5;
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #1C499E;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #a5a5a5;
+  -webkit-border-radius: 6px;
+}
+
+/* clear */
+
+.clearfix::before,
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* Flexible Box */
+
+.box {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* flex换行 */
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+/* flex主轴对齐 */
+
+.justify_center {
+  justify-content: center;
+}
+
+.justify_around {
+  justify-content: space-around;
+}
+
+.justify_between {
+  justify-content: space-between;
+}
+
+/* flex侧轴对齐 */
+
+.items_center {
+  align-items: center;
+}
