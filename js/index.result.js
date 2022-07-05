@@ -1,24 +1,23 @@
+/*
+ * @Author: Cram
+ * @Date: 2022-07-04 22:20:50
+ */
 $(document).ready(function ($) {
-  const swiper = new Swiper(".solution-swiper-container", {
+  const solutionSwiper = new Swiper(".solution-swiper-container", {
     loop: true,
     speed: 700,
     slidesPerView: "auto",
     centeredSlides: true,
-    on: {
-      init: function () {
-        this.slides.removeClass("init");
-      },
-    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
-  swiper.$el.parent(".solution_list")[0].onmouseover = function () {
-    swiper.$el.addClass("mouse-hover");
+  solutionSwiper.$el.parent(".solution_list")[0].onmouseover = function () {
+    solutionSwiper.$el.addClass("mouse-hover");
   };
-  swiper.$el.parent(".solution_list")[0].onmouseout = function () {
-    swiper.$el.removeClass("mouse-hover");
+  solutionSwiper.$el.parent(".solution_list")[0].onmouseout = function () {
+    solutionSwiper.$el.removeClass("mouse-hover");
   };
   // 进口专栏
   $(".iiwcm_ckunk").first().addClass("iiwcm_ckunk_active");
