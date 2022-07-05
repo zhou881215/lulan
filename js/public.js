@@ -1,12 +1,15 @@
-/*
- * @Author: Cram
- * @Date: 2022-07-04 14:09:22
- */
 $(document).ready(function ($) {
+  new WOW().init();
   // banner
-  new Swiper(".swiper-container", {
+  new Swiper(".banner-swiper-container", {
     loop: true,
-    autoplay: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 1000,
+    observer: true,
+    observeParents: true,
     // 如果需要分页器
     pagination: {
       el: ".swiper-pagination",
@@ -14,10 +17,18 @@ $(document).ready(function ($) {
       bulletClass: "my-bullet",
       bulletActiveClass: "my-bullet-active",
     },
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    on: {
+      init: function () {
+        swiperAnimateCache(this); //隐藏动画元素
+        this.emit("slideChangeTransitionEnd"); //在初始化时触发一次slideChangeTransitionEnd事件
+      },
+      slideChangeStart: function () {
+        swiperAnimate(this); //每个slide切换前时也运行当前slide动画
+      },
+      slideChangeTransitionEnd: function () {
+        swiperAnimate(this); //每个slide切换结束时运行当前slide动画
+        // this.slides.eq(this.activeIndex).find('.ani').removeClass('ani');//动画只展示一次
+      },
     },
   });
   // 整页导航
@@ -68,6 +79,7 @@ $(document).ready(function ($) {
   //     navIndex = 0;
   // }
   // $(".nav_ul li").eq(navIndex).addClass("nav_active").siblings().removeClass("nav_active");
+  // 页面滑动
   window.addEventListener("scroll", () => {
     var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
     if (scrollY >= 60) {
