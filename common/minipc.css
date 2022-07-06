@@ -1,12 +1,47 @@
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1720px) {
+  .helmet {
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1720px) {
   .main_middle {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
-  .isuw_main .isuw_pic {
-    width: 74vw;
-    margin: 0 auto;
+  .case_item {
+    width: 19%;
+    height: auto;
+    margin: 0 1% 0.2rem 0;
+  }
+
+  .case_item:nth-of-type(6n) {
+    margin-right: 1%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .main_middle {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .info_item {
+    padding: 20px;
+  }
+
+  .case_item {
+    width: 24%;
+    height: auto;
+    margin: 0 1% 0.2rem 0;
+  }
+
+  .case_item:nth-of-type(6n) {
+    margin-right: 1%;
   }
 }
